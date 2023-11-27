@@ -4,7 +4,7 @@ from os import getenv, environ
 
 
 # Online Stream and Download
-PORT = int(environ.get('PORT', 8080))
+PORT = int(environ.get('PORT', 8000))
 NO_PORT = bool(environ.get('NO_PORT', False))
 APP_NAME = None
 if 'DYNO' in environ:
@@ -36,15 +36,15 @@ CUSTOM_CAPTION = environ.get('CUSTOM_CAPTION')
 
 
 class Config(object):
-	API_ID = int(os.environ.get("API_ID", 13323016))
-	API_HASH = os.environ.get("API_HASH", "13323016")
-	BOT_TOKEN = os.environ.get("BOT_TOKEN","6144687436:AAGShuVn551CQHCWjRkdoBIteGgV0SUWxBo")
-	BOT_USERNAME = os.environ.get("BOT_USERNAME" , "MissRozy_BOT")
-	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", -1001772120203))
-	BOT_OWNER = int(os.environ.get("BOT_OWNER", "5965340120"))
-	DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://lazy:Zabintkhab7808@lazydev786.lpvunl5.mongodb.net/?retryWrites=true&w=majority")
-	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1001765107260")
-	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1001895607162")
+	API_ID = int(os.environ.get("API_ID", 27076402))
+	API_HASH = os.environ.get("API_HASH", "9a4d694a442a653ac62be265067327d1")
+	BOT_TOKEN = os.environ.get("BOT_TOKEN","1637214246:AAGt4FoP9SmHh7guw9yljtenU6HPItgerzw")
+	BOT_USERNAME = os.environ.get("BOT_USERNAME" , "PKCloud_botT")
+	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", -1002119828332))
+	BOT_OWNER = int(os.environ.get("BOT_OWNER", "291771570"))
+	DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://jiomvk:A6TwK9a4aGzKiGrX@cluster0.lvmfzwf.mongodb.net/?retryWrites=true&w=majority")
+	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1002119828332")
+	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1002119828332")
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
 	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
